@@ -217,28 +217,28 @@ function Hero() {
             place-items-center
           "
         >
-          {/* Outer orbit */}
+          {/* Outer orbit
           <div
             className="
               absolute inset-5 rounded-full
               border border-dashed border-white/50
               animate-[spin_18s_linear_infinite]
             "
-          />
+          /> */}
 
-          {/* Inner orbit */}
+          {/* Inner orbit
           <div
             className="
-              absolute inset-[58px] rounded-full
+              absolute inset-8 rounded-full
               border border-dashed border-white/20
               animate-[spin_24s_linear_infinite_reverse]
             "
-          />
+          /> */}
 
           {/* Image card */}
           <motion.div
             className="
-              relative aspect-[0.62] w-[78%]
+              relative aspect-[0.60] w-[78%]
               overflow-hidden rounded-[42px]
               border border-white/[0.13]
               bg-white/[0.07]
@@ -271,7 +271,7 @@ function Hero() {
           {/* First floating chip */}
           <motion.div
             className="
-              absolute -left-[2%] top-[18%]
+              absolute -left-[2%] top-[8%]
               rounded-full border border-white/[0.13]
               bg-white/10 px-4 py-3
               font-extrabold
