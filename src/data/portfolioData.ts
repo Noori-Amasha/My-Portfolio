@@ -52,7 +52,7 @@ export const projects: Project[] = [
     type: "Queue Management Web Application and Mobile Application",
     desc: "A digital queue management system that allows users to generate tokens, track queue progress and helps organisations manage customers efficiently while reducing waiting time.",
     stack: ["MongoDB", "Express.js", "React","Node.js","javascript"],
-    githubUrl: "https://github.com/Noori-Amasha/Smart-Queue-and-Token-Management-System.git"
+    githubUrl: "https://github.com/Vinod-Rajapaksha/Smart-Queue-and-Token-Management-System.git"
   },
   {
     title: "Personal Portfolio",
@@ -73,7 +73,7 @@ export const projects: Project[] = [
     type: "Travel Booking and Management Platform",
     desc: "A tourism management platform that helps users explore travel packages, make bookings and manage trip information while allowing administrators to organise customers, destinations and reservations.",
     stack: ["React", "Springboot", "MSSQL","bootstrap"],
-    githubUrl: "https://github.com/Noori-Amasha/smart-laundry-platform.git"
+    githubUrl: "https://github.com/Noori-Amasha/Tourism-and-Travel-Management-System.git"
   },
 ];
 
