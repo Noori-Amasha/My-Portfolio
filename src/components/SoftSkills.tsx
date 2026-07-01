@@ -22,7 +22,7 @@ function SoftSkills() {
         {skillCategories.map((category, categoryIndex) => (
           <Reveal
             key={category.title}
-            delay={categoryIndex * 0.08}
+            delay={categoryIndex * 0.02}
           >
             <motion.article
               className="
