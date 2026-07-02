@@ -1,38 +1,15 @@
-import { useMemo, useState } from "react";
+import { useState } from "react";
 import { motion } from "motion/react";
+import ParticleField from "./common/ParticleField";
 
 type LandingIntroProps = {
   onFinish: () => void;
 };
 
-type Particle = {
-  id: number;
-  left: number;
-  height: number;
-  delay: number;
-  duration: number;
-};
-
-function createParticles(): Particle[] {
-  return Array.from({ length: 50 }, (_, index) => {
-    const seed = index + 1;
-
-    return {
-      id: index,
-      left: (seed * 37) % 100,
-      height: 80 + ((seed * 29) % 180),
-      delay: ((seed * 17) % 40) / 10,
-      duration: 5 + ((seed * 13) % 50) / 10,
-    };
-  });
-}
-
 function LandingIntro({ onFinish }: LandingIntroProps) {
   const [loading, setLoading] = useState(false);
 
-  const particles = useMemo(() => createParticles(), []);
-
-  const handleStart = () => {
+    const handleStart = () => {
     setLoading(true);
     setTimeout(onFinish, 3800);
   };
@@ -46,40 +23,9 @@ function LandingIntro({ onFinish }: LandingIntroProps) {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,#1e1b4b,transparent_32rem)]" />
 
       <div className="absolute inset-x-0 top-0 h-[52vh] overflow-hidden">
-        {particles.map((item) => (
-          <motion.div
-            key={item.id}
-            className="absolute top-0 w-px origin-top bg-gradient-to-b from-white/45 via-white/15 to-transparent"
-            style={{
-              left: `${item.left}%`,
-              height: item.height,
-            }}
-            animate={{
-              x: [0, -35, 40, -15, 0],
-              opacity: [0.15, 0.75, 0.35, 0.85, 0.2],
-            }}
-            transition={{
-              duration: item.duration,
-              delay: item.delay,
-              repeat: Infinity,
-              ease: "easeInOut",
-            }}
-          >
-            <motion.span
-              className="absolute bottom-0 left-1/2 h-2 w-2 -translate-x-1/2 rounded-full bg-pink-200 shadow-[0_0_18px_rgba(254,240,138,0.95)]"
-              animate={{
-                scale: [0.7, 1.5, 0.9],
-                opacity: [0.4, 1, 0.5],
-              }}
-              transition={{
-                duration: 2.4,
-                repeat: Infinity,
-                delay: item.delay,
-              }}
-            />
-          </motion.div>
-        ))}
+          <ParticleField count={50} minHeight={100} maxHeight={260} />
       </div>
+      
 
       <motion.div
         className="relative z-10 w-full max-w-[720px] rounded-[38px] border border-white/10 bg-white/[0.055] px-6 py-12 text-center shadow-[0_30px_100px_rgba(0,0,0,0.55)] backdrop-blur-xl sm:px-12"
