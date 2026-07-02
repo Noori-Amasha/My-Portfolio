@@ -16,8 +16,7 @@ const aboutCards = [
   {
     number: "01",
     title: "My Approach",
-    description:
-      "I focus on building web applications that are practical, scalable, and easy to maintain. I enjoy working on backend logic, database design, and application architecture while also creating responsive user interfaces that deliver a smooth user experience.",
+    description:"I focus on building web applications that are practical, scalable, and easy to maintain. I enjoy working on backend logic, database design, and application architecture while also creating responsive user interfaces that deliver a smooth user experience.",
     delay: 0,
   },
   {
