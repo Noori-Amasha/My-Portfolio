@@ -1,73 +1,102 @@
-# React + TypeScript + Vite
+<div align="center">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🌌 Amasha Kahadawa — Personal Portfolio
 
-Currently, two official plugins are available:
+### 🚀 A Modern, Responsive & Interactive Developer Portfolio
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+<p>
+  Showcasing my <b>technical skills</b>, <b>software projects</b>, 
+  <b>academic journey</b>, and <b>contact information</b>.
+</p>
 
-## React Compiler
+<p>
+  <a href="#-live-demo">Live Demo</a> •
+  <a href="#-features">Features</a> •
+  <a href="#-technologies-used">Technologies</a> •
+  
+</p>
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+</div>
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 💫 About the Project
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+This portfolio was created to introduce me as a **Software Engineering undergraduate** and an **aspiring Full-Stack Developer**.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+It presents my:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- 💻 Technical skills
+- 🚀 Selected software projects
+- 🎓 Academic and development journey
+- 📩 Contact information
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+The website uses a clean and modern interface with smooth animations, reusable components, responsive layouts, accessibility-focused design, and interactive visual effects.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🌐 Live Demo
+
+The deployed portfolio link will be added here after deployment.
+
+> 🚧 **Coming Soon**
+
+---
+
+## ✨ Features
+
+- 📱 Fully responsive layout for desktop, tablet, and mobile
+- 🎬 Animated landing introduction
+- 🌙 Light and dark theme support
+- 💾 Saved theme preference
+- 📜 Smooth scrolling
+- 📊 Animated scroll progress indicator
+- ✨ Interactive cursor glow
+- 🌌 Particle background effects
+- 👩‍💻 Animated developer hero section
+- 🧩 Reusable UI components
+- 💼 Project cards with GitHub repository links
+- 🪟 Modern glassmorphism-inspired design
+- 🎞️ Reveal and hover animations using Motion
+
+---
+
+## 🛠️ Technologies Used
+
+### 💻 Core Technologies
+
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+
+### 🎨 Animation & UI
+
+![Motion](https://img.shields.io/badge/Motion-FF4D8D?style=flat-square)
+![Lucide React](https://img.shields.io/badge/Lucide_React-F56565?style=flat-square)
+![React Icons](https://img.shields.io/badge/React_Icons-E91E63?style=flat-square)
+![clsx](https://img.shields.io/badge/clsx-4B5563?style=flat-square)
+
+### 🧰 Development Tools
+
+![ESLint](https://img.shields.io/badge/ESLint-4B32C3?style=flat-square&logo=eslint&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white)
+
+---
+
+
+## 📄 License
+
+This project is licensed under the **MIT License**.
+
+---
+
+<div align="center">
+
+### 💙 Designed & Developed by Amasha Kahadawa
+
+⭐ Thank you for visiting my portfolio repository!
+
+</div>
