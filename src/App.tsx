@@ -8,6 +8,7 @@ import SoftSkills from "./components/SoftSkills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import LandingIntro from "./components/LandingIntro";
+import Footer from "./components/Footer";
 
 import { journey } from "./data/portfolioData";
 import { Reveal, SectionTitle } from "./components/Toolkit";
@@ -268,24 +269,27 @@ function App() {
         style={{ scaleX }}
       />
 
-      <div
-        className="
-          relative min-h-screen overflow-hidden
+      <div className="relative min-h-screen overflow-hidden">
+        <div
+          className="
+          mx-auto max-w-[1600px]
           bg-transparent text-slate-[#f8fafc]
           transition-colors duration-300
 
           dark:bg-transparent
-          dark:text-[#faf7fb]
-        "
+          ark:text-[#faf7fb]
+       "
       >
-        <Navbar />
-        <Hero />
-        <About />
-        <SoftSkills />
-        <Projects />
-        <Journey />
-        <Contact />
-      </div>
+      <Navbar />
+      <Hero />
+      <About />
+      <SoftSkills />
+      <Projects />
+      <Journey />
+      <Contact />
+      <Footer/>
+    </div>
+    </div>
     </>
   );
 }
