@@ -67,12 +67,12 @@ function createParticles(
 
 function ParticleField({
   count = 50,
-  minHeight = 80,
-  maxHeight = 260,
+  minHeight = 64,
+  maxHeight = 208,
   minDuration = 5,
   maxDuration = 10,
-  minMove = 12,
-  maxMove = 35,
+  minMove = 10,
+  maxMove = 28,
   className = "",
 }: ParticleFieldProps) {
   const particles = useMemo(
@@ -149,7 +149,7 @@ function ParticleField({
               opacity: [0.65, 0.9, 0.75],
             }}
             transition={{
-              duration: 2.2,
+              duration: 2.9,
               delay: item.delay,
               repeat: Infinity,
               repeatType: "mirror",
