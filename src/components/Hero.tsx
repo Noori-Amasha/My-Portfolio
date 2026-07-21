@@ -1,10 +1,16 @@
 import { motion, useScroll, useTransform } from "motion/react";
+import { useNavigate } from "react-router-dom";
+import { TypeAnimation } from "react-type-animation";
+
 import heroImage from "../assets/hero.png";
 import { Reveal } from "./Toolkit";
 import Button from "./common/Button";
+import HighlightCard from "./common/HighlightCard";
+import ElectricBorder from "./common/ElectricBorder";
 
 function Hero() {
   const { scrollY } = useScroll();
+  const navigate = useNavigate();
 
   const heroY = useTransform(scrollY, [0, 500], [0, -70]);
   const glowY = useTransform(scrollY, [0, 500], [0, 110]);
@@ -65,7 +71,19 @@ function Hero() {
               "
             />
 
-            Creating Modern Software Solutions
+            <TypeAnimation
+                  sequence={[
+                    "Creating Modern Software Solutions",
+                    1800,
+                    "",
+                    500,
+                  ]}
+                  wrapper="span"
+                  speed={45}
+                  deletionSpeed={60}
+                  repeat={Infinity}
+                  cursor={true}
+                />
           </div>
         </Reveal>
 
@@ -82,7 +100,8 @@ function Hero() {
             My Portfolio{" "}
             <span
               className="
-                inline-block bg-[linear-gradient(135deg,#a78bfa,#22d3ee,#f472b6)]
+                inline-block
+                bg-[linear-gradient(135deg,#a78bfa,#22d3ee,#f472b6)]
                 bg-clip-text text-transparent
               "
             >
@@ -99,8 +118,8 @@ function Hero() {
               text-[#a6a6b8]
             "
           >
-            SE undergraduate and aspiring full-stack developer
-            passionate about creating modern software solutions.
+            SE undergraduate and aspiring full-stack developer passionate about
+            creating modern software solutions.
           </p>
         </Reveal>
 
@@ -117,9 +136,24 @@ function Hero() {
               View Projects
             </Button>
 
-            <Button href="#contact" variant="secondary">
+            <button
+              type="button"
+              onClick={() => navigate("/contact")}
+              className="
+                inline-flex min-h-10 w-full
+                items-center justify-center
+                rounded-full border border-white/[0.13]
+                bg-white/[0.05]
+                px-[18px] text-[0.9rem]
+                font-bold text-[#f7f7ff]
+                transition-[transform,border-color,background]
+                duration-200
+                hover:-translate-y-1
+                min-[621px]:w-auto
+              "
+            >
               Contact Me
-            </Button>
+            </button>
           </div>
         </Reveal>
 
@@ -132,50 +166,23 @@ function Hero() {
               min-[981px]:grid-cols-3
             "
           >
-            <div
-              className="
-                rounded-2xl border border-pink/[0.13]
-                bg-white/[0.055] p-4
-              "
-            >
-              <strong className="block text-[1.18rem]">
-                Problem Solving
-              </strong>
+            <HighlightCard
+              title="Problem Solving"
+              description="Creative solutions"
+              color="yellow"
+            />
 
-              <span className="mt-1 block text-[0.8rem] text-[#a6a6b8]">
-                Creative solutions
-              </span>
-            </div>
+            <HighlightCard
+              title="Backend Development"
+              description="Java, Spring Boot"
+              color="green"
+            />
 
-            <div
-              className="
-                rounded-2xl border border-pink/[0.13]
-                bg-white/[0.055] p-4
-              "
-            >
-              <strong className="block text-[1.18rem]">
-                Backend Development
-              </strong>
-
-              <span className="mt-1 block text-[0.8rem] text-[#a6a6b8]">
-                Java, Spring Boot
-              </span>
-            </div>
-
-            <div
-              className="
-                rounded-2xl border border-pink/[0.13]
-                bg-white/[0.055] p-4
-              "
-            >
-              <strong className="block text-[1.18rem]">
-                Frontend Development
-              </strong>
-
-              <span className="mt-1 block text-[0.8rem] text-[#a6a6b8]">
-                React, TypeScript
-              </span>
-            </div>
+            <HighlightCard
+              title="Frontend Development"
+              description="React, TypeScript"
+              color="blue"
+            />
           </div>
         </Reveal>
       </div>
@@ -210,37 +217,28 @@ function Hero() {
             place-items-center
           "
         >
-          <motion.div
-            className="
-              relative aspect-[0.60] w-[72%]
-              overflow-hidden rounded-[34px]
-              border border-white/[0.13]
-              bg-white/[0.07]
-              shadow-[0_25px_80px_rgba(0,0,0,0.45)]
-              [transform-style:preserve-3d]
+          <ElectricBorder className="aspect-[0.60] w-[72%] rounded-[34px]">
+              <div
+                className="
+                  relative h-full w-full
+                  overflow-hidden rounded-[34px]
+                  border border-white/[0.13]
+                  bg-white/[0.07]
+                  shadow-[0_25px_80px_rgba(0,0,0,0.45)]
 
-              after:pointer-events-none
-              after:absolute after:inset-0
-              after:bg-[linear-gradient(to_top,rgba(7,7,12,0.75),transparent_45%)]
-              after:content-['']
-            "
-            whileHover={{
-              rotateX: 8,
-              rotateY: -8,
-              scale: 1.03,
-            }}
-            transition={{
-              type: "spring",
-              stiffness: 180,
-              damping: 18,
-            }}
-          >
-            <img
-              src={heroImage}
-              alt="Portfolio hero"
-              className="h-full w-full object-cover"
-            />
-          </motion.div>
+                  after:pointer-events-none
+                  after:absolute after:inset-0
+                  after:bg-[linear-gradient(to_top,rgba(7,7,12,0.75),transparent_45%)]
+                  after:content-['']
+                "
+              >
+                <img
+                  src={heroImage}
+                  alt="Portfolio hero"
+                  className="h-full w-full object-cover"
+                />
+              </div>
+              </ElectricBorder>
 
           <motion.div
             className="
