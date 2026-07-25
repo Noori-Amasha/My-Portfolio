@@ -11,10 +11,9 @@ function SoftSkills() {
         title="The technologies behind the software I build."
         text="My growing technical toolkit for developing reliable backend systems, responsive user interfaces, and complete full-stack applications."
       />
-
       <div
         className="
-          grid grid-cols-1 gap-5
+          grid grid-cols-1 gap-4
           md:grid-cols-2
           xl:grid-cols-3
         "
@@ -26,10 +25,10 @@ function SoftSkills() {
           >
             <motion.article
               className="
-                group relative h-full min-h-[190px]
-                overflow-hidden rounded-[2rem]
+                group relative h-full min-h-[165px]
+                overflow-hidden rounded-[1.5rem]
                 border border-blue-200/80
-                bg-white/80 p-6
+                bg-white/80 p-5
                 shadow-[0_25px_80px_rgba(30,64,175,0.12)]
                 backdrop-blur-xl
 
@@ -58,7 +57,7 @@ function SoftSkills() {
               <div className="relative z-10">
                 <h3
                   className="
-                    mb-5 text-xl font-bold
+                    mb-4 text-lg font-bold
                     tracking-[-0.03em]
                     text-slate-900
                     dark:text-[#faf7fb]
@@ -67,7 +66,7 @@ function SoftSkills() {
                   {category.title}
                 </h3>
 
-                <div className="flex flex-wrap gap-3">
+                <div className="flex flex-wrap gap-2.5">
                   {category.skills.map((skill, skillIndex) => (
                     <motion.span
                       key={skill}
@@ -75,8 +74,8 @@ function SoftSkills() {
                         rounded-full
                         border border-blue-200/70
                         bg-blue-50/80
-                        px-4 py-2.5
-                        text-sm font-bold
+                        px-3 py-2
+                        text-s font-bold
                         text-slate-700
                         backdrop-blur-md
 
