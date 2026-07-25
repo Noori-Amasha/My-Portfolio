@@ -14,8 +14,8 @@ function Button({
   className = "",
 }: ButtonProps) {
   const baseClasses = `
-    inline-flex min-h-12 w-full items-center justify-center
-    rounded-full px-[22px] font-bold
+    inline-flex min-h-10 w-full items-center justify-center
+    rounded-full px-[18px] text-[0.9rem] font-bold
     transition-[transform,border-color,background]
     duration-200
     hover:-translate-y-1
