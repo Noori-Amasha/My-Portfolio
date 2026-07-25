@@ -5,7 +5,8 @@ import Section from "./common/Section";
 
 function Projects() {
   return (
-    <Section id="projects">
+    <Section id="projects"
+    className="pt-20 sm:pt-24 lg:pt-[110px]">
       <SectionTitle
         label="Projects"
         title="Ideas transformed into practical software solutions."
@@ -13,15 +14,15 @@ function Projects() {
         problem-solving approach, and continuous growth as a software engineer."
       />
 
-      <div className="grid grid-cols-1 gap-[22px] lg:grid-cols-3">
+      <div className="grid grid-cols-1 gap-5 lg:grid-cols-3">
         {projects.map((project, index) => (
           <Reveal key={project.title} delay={index * 0.12}>
             <motion.article
               className="
-                group relative h-full min-h-[390px]
-                overflow-hidden rounded-[2rem]
+                group relative h-full min-h-[330px]
+                overflow-hidden rounded-[1.5rem]
                 border border-blue-200/80
-                bg-white/80 p-[30px]
+                bg-white/80 p-6
                 shadow-[0_25px_80px_rgba(30,64,175,0.12)]
                 backdrop-blur-xl
                 [transform-style:preserve-3d]
@@ -73,7 +74,7 @@ function Projects() {
 
                 <h3
                   className="
-                    mt-[60px] text-[2rem] font-bold
+                    mt-[42px] text-[1.55rem] font-bold
                     tracking-[-0.04em]
                     text-slate-900 dark:text-[#faf7fb]
                   "
@@ -83,14 +84,14 @@ function Projects() {
 
                 <p
                   className="
-                    mt-4 leading-[1.8]
+                    mt-3 text-[0.95rem] leading-[1.7]
                     text-slate-600 dark:text-[#b7aabd]
                   "
                 >
                   {project.desc}
                 </p>
 
-                <div className="mt-7 flex flex-wrap gap-2.5">
+                <div className="mt-5 flex flex-wrap gap-2">
                   {project.stack.map((item) => (
                     <span
                       key={item}
@@ -98,8 +99,8 @@ function Projects() {
                         rounded-full
                         border border-blue-200/70
                         bg-blue-50/80
-                        px-3 py-2
-                        text-[0.82rem] text-slate-600
+                        px-2.5 py-1.5
+                        text-[0.78rem] text-slate-600
 
                         dark:border-pink-300/10
                         dark:bg-white/[0.08]
@@ -118,7 +119,7 @@ function Projects() {
                   aria-label={`View ${project.title} repository on GitHub`}
                   className="
                     mt-auto inline-flex w-fit
-                    items-center gap-2 pt-[34px]
+                    items-center gap-2 pt-6
                     font-extrabold
                     text-blue-600
                     transition-colors duration-200
