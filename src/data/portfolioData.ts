@@ -36,8 +36,6 @@ export const skillCategories: SkillCategory[] = [
   },
 ];
 
-
-
 export type Project = {
   title: string;
   type: string;
@@ -83,22 +81,35 @@ export type JourneyItem = {
   desc: string;
 };
 
-export const journey: JourneyItem[] = [
+export const journey = [
   {
     year: "2024",
     title: "University Journey Began",
-    desc: "Started my undergraduate studies in Computing. Built a strong foundation in programming, Data Structures & Algorithms, and networking fundamentals while developing problem-solving and analytical thinking skills.",
+    desc: "Started my undergraduate studies in Computing and began developing the technical mindset required to analyse problems and build practical software solutions.",
   },
-
+  {
+    year: "2024",
+    title: "Programming and Computing Foundations",
+    desc: "Built a foundation in programming, Data Structures and Algorithms, networking fundamentals, and analytical problem-solving through coursework and practical activities.",
+  },
   {
     year: "2025",
-    title: "Core Software Engineering & AI",
-    desc: "Expanded my knowledge through Object-Oriented Programming, Software Engineering principles, and Artificial Intelligence & Machine Learning. Gained experience in designing scalable systems, software development lifecycles, and intelligent solutions.",
+    title: "Core Software Engineering",
+    desc: "Expanded my knowledge of Object-Oriented Programming, Software Engineering principles, system design, and structured software development practices. Applied these concepts by developing a backend-focused project using Java and Spring Boot.",
   },
-
+  {
+    year: "2025",
+    title: "Artificial Intelligence and System Design",
+    desc: "Explored Artificial Intelligence and Machine Learning while learning how to design scalable systems, manage software lifecycles, and develop intelligent applications.",
+  },
   {
     year: "2026",
     title: "Software Engineering Specialization",
-    desc: "Successfully completed my second year and was selected for the Software Engineering specialization. Developed full-stack applications using the MERN stack, explored React Native mobile development, studied Operating Systems & System Administration, and strengthened professional collaboration and project management skills.",
+    desc: "Successfully completed my second year and was selected for the Software Engineering specialization, strengthening my focus on modern application development.",
+  },
+  {
+    year: "2026",
+    title: "Full-Stack, Mobile and Professional Growth",
+    desc: "Built full-stack applications using the MERN stack, explored React Native mobile development, studied operating systems, and improved teamwork and project management skills.",
   },
 ];
