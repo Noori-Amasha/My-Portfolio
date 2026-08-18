@@ -37,9 +37,9 @@ The website uses a clean and modern interface with smooth animations, reusable c
 
 ## 🌐 Live Demo
 
-The deployed portfolio link will be added here after deployment.
-
-> 🚧 **Coming Soon**
+<a href="https://amasha-kahandawa.netlify.app/" target="_blank">
+  <img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=netlify&logoColor=white">
+</a>
 
 ---
 
