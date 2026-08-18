@@ -180,7 +180,7 @@ function LandingIntro({ onFinish }: LandingIntroProps) {
           Portfolio
         </motion.h1>
 
-        <p className="mx-auto mt-5 max-w-[416px] text-sm leading-7 text-white/55">
+        <p className="mx-auto mt-5 max-w-[416px] text-xs leading-7 text-white/55">
           Software Engineering Undergraduate | Aspiring Full-Stack Developer
         </p>
 
